@@ -1,48 +1,38 @@
-.callout {
-    max-width: 400px;
-    margin: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    background-color: #247;
-    color: #fff;
+nav {
+    background-color: darkblue;
+    padding: 10px;
 }
 
-.callout img {
-    float: right;
-    margin: 0 0 10px 15px;
-    border: 5px solid #fff;
-    padding: 3px;
-    background-color: #fff;
-    width: 100px;
-    height: auto;
-}
-
-.callout blockquote {
-    margin: 0;
-}
-
-.callout cite {
+nav a {
+    color: white;
     display: block;
-    border-top: 1px solid #fff;
-    padding-top: 10px;
-    text-align: right;
-    font-size: smaller;
+    padding: 20px;
 }
 
-main {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
+h1 {
+    color: blue;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
 }
 
 aside {
-    width: 90%;
-    max-width: 300px;
-    margin: 20px auto;
-    border: 2px solid #ccc;
-    padding: 15px;
-    background-color: #f0f0f0;
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
     color: #333;
+    text-align: center;
 }
 
 aside img {
@@ -50,23 +40,9 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-}
-
-p {
-    padding: 0;
-}
-
 footer {
-    margin-top: 30px;
-    border-top: 2px solid #999;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
-    padding-top: 10px;
-    color: #555;
-    font-size: 0.9rem;
+    padding: 1rem;
 }
