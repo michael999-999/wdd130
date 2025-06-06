@@ -18,8 +18,7 @@ body {
   color: #333;
   background-color: #fff;
   line-height: 1.6;
-  margin: 0 1rem;
-  /* Small side margin for mobile */
+  margin: 0 1rem; /* Small side margin for mobile */
 }
 
 header,
@@ -73,6 +72,12 @@ header nav ul li a {
   font-weight: bold;
 }
 
+/* Accessibility: focus style for keyboard nav */
+header nav ul li a:focus-visible {
+  outline: 3px solid var(--accent1-color);
+  outline-offset: 3px;
+}
+
 /* ===== Hero Section ===== */
 .hero {
   position: relative;
@@ -95,6 +100,15 @@ header nav ul li a {
   color: white;
   background-color: rgba(95, 168, 211, 0.8);
   padding: 16px 0;
+  z-index: 1;
+}
+
+/* Responsive font size for hero heading */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.4rem;
+    padding: 12px 0;
+  }
 }
 
 .hero article {
@@ -128,7 +142,7 @@ h2 {
 /* ===== History Section ===== */
 .history {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr;
   gap: 1rem;
   align-items: center;
   background-color: #f9f9f9;
@@ -136,8 +150,9 @@ h2 {
 }
 
 .history img {
-  width: 100px;
+  width: 120px;
   height: auto;
+  border-radius: 8px;
 }
 
 /* ===== Adventure Gallery ===== */
@@ -148,9 +163,9 @@ h2 {
 
 .adventure-gallery {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: flex-start;
 }
 
 .adventure-gallery figure {
@@ -189,10 +204,22 @@ footer nav.socialmedia {
   display: flex;
   gap: 12px;
   justify-content: flex-end;
-
 }
 
 footer nav.socialmedia a img {
   width: 24px;
   height: 24px;
+}
+
+/* Responsive footer stacking for small screens */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  footer nav.socialmedia {
+    justify-content: center;
+  }
 }
