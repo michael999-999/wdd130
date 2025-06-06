@@ -18,13 +18,16 @@ body {
   color: #333;
   background-color: #fff;
   line-height: 1.6;
+  margin: 0 1rem;
+  /* Small side margin for mobile */
 }
 
 header,
 main,
 footer {
-  width: 840px;
+  max-width: 840px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 /* ===== Header using Grid ===== */
@@ -37,8 +40,10 @@ header {
   gap: 16px;
 }
 
+/* Align header items uniformly */
 header img {
   height: 60px;
+  justify-self: start;
 }
 
 header h1 {
@@ -46,6 +51,11 @@ header h1 {
   font-size: 1.8rem;
   text-align: center;
   color: var(--primary-color);
+  justify-self: center;
+}
+
+header nav {
+  justify-self: end;
 }
 
 /* ===== Nav using Flex ===== */
@@ -178,6 +188,8 @@ footer .footer-text {
 footer nav.socialmedia {
   display: flex;
   gap: 12px;
+  justify-content: flex-end;
+
 }
 
 footer nav.socialmedia a img {
