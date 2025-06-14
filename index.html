@@ -1,45 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Michael Adangabe's homepage for WDD 130 - Web Fundamentals. This page shares course-related projects and personal details.">
-    <meta name="author" content="Michael Adangabe">
-    <title>Michael Adangabe</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+        content="Welcome to WillBowm Water Rafting. Experience the thrill and excitement of water adventures!" />
+    <title>WillBowm Water Rafting | Home</title>
+    <link rel="stylesheet" href="styles/home.c" />
 </head>
 
 <body>
+    <!-- Header -->
     <header>
+        <img src="images/logo.png" alt="WillBowm Logo" />
         <nav>
-            <a href="#">Home</a>
-            <a href="rafting-website.html">Rafting Website</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <h1>Michael Adangabe</h1>
-        <img src="images/call of duty.jpg.jpg" width="200" alt="Profile picture of Michael">
-        <p>Hello! My name is Michael Adangabe. I'm a student of Web Fundamentals, and I enjoy learning about HTML, CSS,
-            and
-            programming. This homepage will showcase my work throughout the course.
-        </p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure" />
+            <div class="hero-text">
+                <h1>Experience the Thrill of Water Rafting</h1>
+                <p>"Life is a journey, not a destination." – President Thomas S. Monson</p>
+            </div>
+        </section>
 
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Book Your Next Adventure</h2>
+            <a href="trips.html" class="button">View Trips</a>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Grid Section -->
+        <section class="grid-layout">
+            <div class="grid-item">
+                <h3>Family Friendly</h3>
+                <p>Safe and exciting trips for all ages.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Pro Guides</h3>
+                <p>Trained and certified rafting professionals.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Unforgettable Memories</h3>
+                <p>Capture the moments and relive the adventure.</p>
+            </div>
+        </section>
     </main>
 
-    <aside>
-        <h2>Ghana</h2>
-        <img src="images/Ghana picture.jpg.jpg" width="200" alt="Ghana landscape">
-        <p>Ghana is a West African country known for its rich cultural heritage, historical sites, and welcoming people.
-            It is a peaceful nation with vibrant cities and beautiful natural landscapes.</p>
-    </aside>
-
+    <!-- Footer -->
     <footer>
-        <p>©️ 2025 🌳 Michael Adangabe 🌳 Ghana, Accra</p>
+        <p>© 2025 WillBowm Water Rafting | All Rights Reserved</p>
+        <p><a href="https://www.byui.edu">BYU-Idaho</a></p>
     </footer>
 </body>
-
 
 </html>
