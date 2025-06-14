@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Learn more about WILLBOWM Water Rafting's history, mission, and adventures." />
+    <meta name="description"
+        content="Home page of WILLBOWM Water Rafting. Book trips, view adventures, and join our newsletter." />
     <meta name="author" content="Michael Adanhabe" />
-    <title>About Us | WILLBOWM Water Rafting</title>
+    <title>Home | WILLBOWM Water Rafting</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,13 +22,12 @@
 
 <body>
     <header>
-        <!-- Wrap header in grid for logo, title, nav -->
         <img src="images/logo.jpg" alt="WILLBOWM Water Rafting Logo" />
         <h1>WILLBOWM Water Rafting</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -38,61 +38,50 @@
         <!-- Hero Section -->
         <section class="hero" aria-label="Rafting Adventure">
             <img src="images/imge1 (1).jpg" alt="Rafting Adventure Background" />
-            <h2>WILLBOWM WATER Rafting</h2>
-            <p>Join us for unforgettable rafting adventures on some of the most exciting rivers.</p>
-            <a href="trips.html" class="hero-button">Book a Trip</a>
+            <div class="hero-text">
+                <h2>WILLBOWM WATER Rafting</h2>
+                <p>Join us for unforgettable rafting adventures on some of the most exciting rivers.</p>
+                <a href="trips.html" class="hero-button">Book a Trip</a>
+            </div>
         </section>
 
-        <!-- Company Mission Article -->
-        <article>
-            <img src="images/people-2078486_640.jpg" alt="Smiling client enjoying rafting" />
-            <p>
-                At RaftX Adventures, our mission is to boldly splash where no paddler has splashed before.
-                We believe in the power of river-fueled adrenaline, unmatched teamwork, and slightly soggy socks.
-                Whether you're chasing rapids or just escaping the office, our purpose is to guide every thrill-seeker
-                down streams of glory and foam. Ride the waves. Embrace the wild. Live the motto: “Paddle Hard. Laugh
-                Louder.”
-            </p>
-        </article>
-
-        <!-- History Section -->
-        <section class="history" aria-labelledby="history-heading">
-            <h2 id="history-heading">History</h2>
-            <p>
-                Founded in the summer of 1998 with just two rafts and a fearless crew of adventurers, RaftX Adventures
-                began as a dream to explore the untamed rivers of the northwest. Over the years, our passion for
-                whitewater rafting grew into a full-fledged operation, guiding thousands of guests through scenic
-                canyons and roaring rapids.
-                From humble beginnings on the Snake River to epic journeys across the country, our legacy continues to
-                flow strong — one wave at a time.
-            </p>
+        <!-- Newsletter Sign-up -->
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">Subscribe to Our Newsletter</h2>
+            <p>Stay up to date on our upcoming trips, special offers, and river news!</p>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <button type="submit">Sign Me Up!</button>
+            </form>
         </section>
 
-        <!-- Adventure Gallery Section -->
-        <section class="adventures" aria-labelledby="adventure-heading">
-            <h2 id="adventure-heading">Adventure Awaits You!</h2>
-            <p>Discover the thrilling expeditions and breathtaking views you can experience with our expert guides.</p>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/raft-1429872_1280.jpg" alt="Rafting through wild rapids" />
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-829053_1280.jpg" alt="Adventurers navigating a rapid" />
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting18_600.jpg" alt="Team paddling hard in rough water" />
-                    <figcaption>Half Day Excursion</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting42_600.jpg" alt="Rafting down a scenic river" />
-                    <figcaption>Mountain Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting56_600.jpg" alt="Water rafting in the sunshine" />
-                    <figcaption>Lazy River Drift</figcaption>
-                </figure>
+        <!-- Call to Action -->
+        <section class="cta" aria-label="Plan Your Adventure">
+            <h2>Ready to Plan Your Adventure?</h2>
+            <p>Visit our Trips page to explore packages and get started!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
+
+        <!-- Adventure Highlights (CSS Grid) -->
+        <section class="adventure-grid" aria-labelledby="highlights-heading">
+            <h2 id="highlights-heading">Top Adventures</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/rafting-829053_1280.jpg" alt="Big Mallard Rapids" />
+                    <h3>Big Mallard Rapids</h3>
+                    <p>A thrilling ride through class IV rapids with breathtaking canyon views.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting18_600.jpg" alt="Half Day Excursion" />
+                    <h3>Half Day Excursion</h3>
+                    <p>Perfect for a quick adventure with family and friends on the river.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting56_600.jpg" alt="Lazy River Drift" />
+                    <h3>Lazy River Drift</h3>
+                    <p>A calm and scenic route perfect for beginners and nature lovers.</p>
+                </div>
             </div>
         </section>
     </main>
