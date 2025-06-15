@@ -128,17 +128,6 @@ header nav ul li a:focus-visible {
   border-radius: 8px;
 }
 
-/* ===== Section Styling ===== */
-section {
-  margin: 32px 16px;
-}
-
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 8px;
-}
-
 
 /* --- Base Layout (Used across all pages) --- */
 body {
@@ -149,7 +138,7 @@ body {
 }
 
 header.header {
-  background-color: #03506f;
+  background-color: #9fd1e3;
   color: white;
   display: flex;
   justify-content: space-between;
